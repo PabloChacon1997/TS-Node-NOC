@@ -12,3 +12,5 @@ MAILER_PASSWORD=
 
 PROD=false
 ```
+3. Ejecutar el comando ```npm install``` para construir los paquetes de node_modules
+4. Ejecutar el comando ```npm run dev``` para levantar la aplicación
