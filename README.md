@@ -17,6 +17,11 @@ MONGO_URL=
 MONGO_DB_NAME=
 MONGO_USER=
 MONGO_PASS=
+
+POSTGRES_URL=
+POSTGRES_USER=
+POSTGRES_DB=
+POSTGRES_PASSWORD=
 ```
 3. Ejecutar el comando ```npm install``` para construir los paquetes de node_modules
 4. Ejecutar el comando ```npm run dev``` para levantar la aplicación
