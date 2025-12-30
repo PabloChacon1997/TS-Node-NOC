@@ -31,18 +31,18 @@ export class Server {
     // emailService.sendEmailWithFileSysytemLogs(['pablo.andres.chacon@outlook.com', 'actdck@gmail.com']);
     // const logs = await logRepository.getLogs(LogSeverityLevel.high);
     // console.log(logs);
-    CronService.createJob(
-      '*/5 * * * * *',
-      () => {
-        const url = 'https://google.com';
-        // const url = 'http://localhost:3000';
-        new CheckServiceMultiple(
-          [fsLogRepository, postgresLogRepository, mongoLogRepository],
-          () => console.log(`${url} is ok`),
-          (error) => console.log(error)
-        ).execute(`${url}`);
-      }
-    );
+    // CronService.createJob(
+    //   '*/5 * * * * *',
+    //   () => {
+    //     const url = 'https://google.com';
+    //     // const url = 'http://localhost:3000';
+    //     new CheckServiceMultiple(
+    //       [fsLogRepository, postgresLogRepository, mongoLogRepository],
+    //       () => console.log(`${url} is ok`),
+    //       (error) => console.log(error)
+    //     ).execute(`${url}`);
+    //   }
+    // );
   }
 
 }
