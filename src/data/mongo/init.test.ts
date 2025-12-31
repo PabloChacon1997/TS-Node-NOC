@@ -19,7 +19,7 @@ describe('init MongoDB', () => {
     try {
       const connected = await MongoDatabase.connect({
         dbName: envs.MONGO_DB_NAME,
-        mongoUrl: 'mongodb+srv://pabloandres120297_db_user:Hrf6zT77J6F1krpv@cluster0.mongodb.net/'
+        mongoUrl: 'mongodb://user:xxxxxxxxxx@cluster0.mongodb.net/'
       });
       expect(connected).toBe(false);
       
